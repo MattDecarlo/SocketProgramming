@@ -73,5 +73,6 @@ def thread2():
         
 #for multithreading allowing multiple users(can only have a max of 2 users)
 if __name__ == '__main__':
-    Thread(target = thread1).start()
-    Thread(target = thread2).start()   
+    while True:
+        Thread(target = thread1).start()
+        Thread(target = thread2).start()   
